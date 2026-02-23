@@ -1,0 +1,40 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>SmartDoc 深度比对界面</title>
+            <style>
+                body { font-family: sans-serif; margin: 0; display: flex; flex-direction: column; height: 100vh; background: #f4f4f9; }
+                .header { background: #2c3e50; color: white; padding: 15px; text-align: center; }
+                .main { display: flex; flex: 1; overflow: hidden; padding: 10px; gap: 10px; }
+                .pane { flex: 1; display: flex; flex-direction: column; background: white; border: 1px solid #ddd; border-radius: 4px; overflow: hidden; }
+                .pane-header { background: #ecf0f1; padding: 10px; font-weight: bold; border-bottom: 1px solid #ddd; }
+                .scroll { flex: 1; overflow-y: auto; padding: 20px; }
+                img { width: 100%; border: 1px solid #eee; margin-bottom: 15px; }
+                .diff-area { margin-top: 20px; padding-top: 20px; border-top: 2px dashed #bbb; line-height: 1.6; }
+                .ins { background: #e6ffed; color: #22863a; text-decoration: none; }
+                .del { background: #ffeef0; color: #b31d28; text-decoration: line-through; }
+            </style>
+        </head>
+        <body>
+            <div class="header">SmartDoc-AI 语义与原件多模态比对报告</div>
+            <div class="main">
+                <div class="pane">
+                    <div class="pane-header">【基准版本】: 可编辑PDF测试1.pdf</div>
+                    <div class="scroll">
+                        <img src="cache_old/p_0.png"><img src="cache_old/p_1.png"><img src="cache_old/p_2.png">
+                        <div class="diff-area">上海大学期刊社自助缴费取票指南<br><br>1、 登录网站 http://pay.shu.edu.cn/SPPMain/ 注册(建议火狐浏览器)<br><br>或者进上海大学财务处网站，选择左上角的“网上缴费平台”。<br><br>进行注册。<br><br>2、 注册后重新登录 http://pay.shu.cn/SPPMain/，选择<br><br>3、点击相应项目类别（审稿费、版面费、资源费、订杂志），输入金<br><br>额，确定金额后点击“支付”<br><br>5、点击确定后，进入订单生成页面，确认相应信息正确后，请点击“确认支付”。<br><br>6、扫码完成支付。<br><br>【期刊订阅须知】<br><br>凡订阅杂志的读者，<br><br>以上 4栏处均可用于填写 订阅期刊名、期数、本书<br><br>（eg：**杂志，**年**期，**本）<br><br>此栏处请写明：收件地址、手机、姓名、邮编</div>
+                    </div>
+                </div>
+                <div class="pane">
+                    <div class="pane-header">【修订版本】: 可编辑PDF测试2.pdf</div>
+                    <div class="scroll">
+                        <img src="cache_new/p_0.png"><img src="cache_new/p_1.png"><img src="cache_new/p_2.png"><img src="cache_new/p_3.png">
+                        <div class="diff-area">上海大学期刊社自助缴费取票指南<br><br>1、 登录网站 http://pay.shu.edu.cn/SPPMain/ 注册(建议火狐浏览器)<br><br>或者进上海大学财务处网站，选择左上角的“网上缴费平台”。<br><br>进行注册。<br><br>2、 注册后重新登录 http://pay.shu.cn/SPPMain/，选择<br><br>3、点击相应项目类别（审稿费、版面费、资源费、订杂志），输入金<br><br>额，确定金额后点击“支付”<br><br><span class="ins">4、填写相应的信息（注意：开票类型勾选“电子发票”，需要单位报<br><br>销的不要选择“个人”，电子发票会发到填写的邮箱）<br><br>刊名请写全称、<br><br>稿号务必填写正确<br><br></span>5、点击确定后，进入订单生成页面，确认相应信息正确后，请点击“确认支付”。<br><br>6、扫码完成支付。<br><br>【期刊订阅须知】<br><br>凡订阅杂志的读者，<br><br>以上 4栏处均可用于填写 订阅期刊名、期数、本书<br><br>（eg：**杂志，**年**期，**本）<br><br>此栏处请写明：收件地址、手机、姓名、邮编</div>
+                    </div>
+                </div>
+            </div>
+        </body>
+        </html>
+        

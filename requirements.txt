@@ -1,0 +1,15 @@
+# --- 文档解析与渲染核心库 ---
+pymupdf>=1.23.0
+pdfplumber>=0.10.0
+python-docx>=1.1.0
+
+# --- 差异比对算法与数据格式化 ---
+diff-match-patch>=20230711
+tabulate>=0.9.0
+
+# --- AI 推理与终端交互界面 ---
+llama-cpp-python>=0.2.0
+rich>=13.0.0
+
+# --- 项目构建工具 ---
+hatchling
